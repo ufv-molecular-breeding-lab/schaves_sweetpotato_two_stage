@@ -6,12 +6,17 @@ Although single-stage models are generally more efficient, there are contexts wh
 
 ## 🗝️ Key message
 
-Using the full weight matrix and deregressed pedigree-based best linear unbiased predictions in second-stage models lead to selections and genomic predictions closer to those obtained using a single-stage model. 
+Using the full weight matrix and deregressed pedigree-based best linear unbiased predictions in second-stage models lead to selections and genomic predictions closer to those obtained using a single-stage model.
+
+<img width="3160" height="2784" alt="gebvs_stg2ss" src="https://github.com/user-attachments/assets/223583e1-63fb-4557-adb6-d6e543b4a1a3" />
+
+<img width="3160" height="2784" alt="CV_both" src="https://github.com/user-attachments/assets/acc4e1e6-9b9f-4679-9d57-1a5218ed4f82" />
+
 
 ## 🛠️ Repository structure
 
 ```
-schaves_sweetpotato_two_stage/
+🌳 schaves_sweetpotato_two_stage/
 ├── 📂 Data/
 │   ├── Phenotype.csv                   # Raw phenotypic data from multi-environment trials
 │   ├── SNPs.RDS                        # Hexaploid SNP dosage matrix (0 to 6)
