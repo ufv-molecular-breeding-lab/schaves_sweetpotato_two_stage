@@ -150,7 +150,7 @@ stg1 = parLapply(cl = cl, X = data.list, fun = function(x){
   x$genod = as.factor(x$geno.cod)
   x <<- x
   a = Sys.time()
-  mod_GA = stage1(
+  mod_GAA = stage1(
     fixed = rytha ~ pool + check.cod,
     random = ~ vm(geno.cod, Asparse) + ide(geno.cod) + colgroup + rowgroup + colgroup:rowgroup,
     residual = ~ ar1v(rn):ar1(cn),
@@ -298,7 +298,7 @@ stg1 = parLapply(cl = cl, X = data.list, fun = function(x){
     models = list(
       BLUE = mod_fixed,
       BLUP = mod_GI,
-      ABLUP = mod_GA
+      ABLUP = mod_GAA
     ),
     selection = list(
       BLUP = blup,
